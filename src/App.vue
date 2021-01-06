@@ -5,8 +5,8 @@
   </div>
 </template>
 
-<script>
-import LikeHeader from "./LikeHeader.vue";
+<script scoped>
+import LikeHeader from "./components/LikeHeader.vue";
 
 
 export default {
@@ -15,7 +15,13 @@ export default {
   }
 }
 
-
 </script>
+
+<style scoped>
+div {
+  border: 1px solid blue;
+}
+</style>
+
 
 
