@@ -1,35 +1,20 @@
 <template>
   <div>
-    <LikeHeader></LikeHeader>
-    <h2>{{number}}</h2>
-    <LikeNumber></LikeNumber>
+    <button @click="show = ! show">切り替え</button>
+    <p v-if="show">hello</p>
   </div>
 </template>
 
-<script scoped>
-import LikeHeader from "./components/LikeHeader.vue";
-
-
+<script>
 export default {
   data() {
-      return {
-        number: 10
-      }
-  },
-
-  components: {
-    LikeHeader: LikeHeader
+    return {
+      show: true
+    };
   }
-}
-
+};
 </script>
 
-<style scoped>
-div {
-  border: 1px solid blue;
-}
+<style >
+
 </style>
-
-
-
-
