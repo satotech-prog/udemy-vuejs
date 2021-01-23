@@ -1,7 +1,12 @@
 <template>
-  <div>
+  <div class="main">
     <button @click="show = ! show">切り替え</button>
-    <p v-if="show">hello</p>
+    <transition name="fade">
+       <p v-if="show">hello</p>
+    </transition>
+    <transition name="slide">
+      <p v-if="show">bye</p>
+    </transition>
   </div>
 </template>
 
@@ -16,5 +21,22 @@ export default {
 </script>
 
 <style >
+.fade-enter {
 
+}
+.fade-enter-active {
+
+}
+.fade-enter-to {
+
+}
+.fade-leave {
+
+}
+.fade-leave-active {
+
+}
+.fade-leave-to {
+  
+}
 </style>
