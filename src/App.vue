@@ -21,22 +21,5 @@ export default {
 </script>
 
 <style >
-.fade-enter {
 
-}
-.fade-enter-active {
-
-}
-.fade-enter-to {
-
-}
-.fade-leave {
-
-}
-.fade-leave-active {
-
-}
-.fade-leave-to {
-  
-}
 </style>
